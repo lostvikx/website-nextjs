@@ -1,5 +1,5 @@
 ---
-title: "fintech-info"
+title: "A Brief on FinTech"
 date: "May 4, 2022"
 excerpt: "Is FinTech really the next big thing?"
 cover_image: "/images/posts/fintech-info.avif"

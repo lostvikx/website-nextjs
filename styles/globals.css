@@ -5,6 +5,8 @@
   --pink: #f28b82;
   --green: #81c995;
   --yellow: #fcd56c;
+  --alt-bg: #2c2c2c;
+  /* --grey: rgb(131, 131, 131); */
 }
 
 * {
@@ -19,7 +21,7 @@ html {
 
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  max-width: 700px;
+  max-width: 1100px;
   margin: 0 auto;
   background-color: var(--bg-color);
   color: var(--text);
@@ -179,7 +181,7 @@ article pre {
 }
 
 hr {
-  width: 80%;
+  width: 90%;
   opacity: 70%;
   margin: 1rem auto 2rem;
 }
@@ -254,7 +256,9 @@ blockquote {
 }
 
 .post-img {
+  position: relative;
   width: 25%;
+  height: 150px;
   /* overflow: hidden; */
 }
 

@@ -1,10 +1,11 @@
-# NGO Internship Experience
-
-My experience working with an NGO organization as a teacher.
-
-![NGO Image](./imgs/ngo-internship.avif)
-
 ---
+title: "NGO Internship Experience"
+date: "May 4, 2022"
+excerpt: "My experience working with an NGO organization as a teacher."
+cover_image: "/images/posts/ngo-internship.avif"
+---
+
+# NGO Internship Experience
 
 ## Introduction
 Hi, my name is Vikram Singh Negi. I am a student at ITM Business School pursuing PGDM in FinTech Batch 21-23. I was lucky to get an opportunity to work for an NGO called DBM India, provided by ITM Business School. I got to conduct English classes for Para Nursing students.

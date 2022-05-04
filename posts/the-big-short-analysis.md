@@ -1,3 +1,10 @@
+---
+title: "The Big Short: Analysis"
+date: "May 4, 2022"
+excerpt: "Movie Review: Big Short"
+cover_image: "/images/posts/the-big-short.jpg"
+---
+
 # The Big Short - Analysis
 
 I recently watched The Big Short, a film about the housing crisis caused by mortgage backed securities in the United States of America. I describe less of what happened in the movie, focusing more on what and how the crisis occured. 
