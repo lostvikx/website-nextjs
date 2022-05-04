@@ -1,6 +1,6 @@
 ---
 title: "NGO Internship Experience"
-date: "May 4, 2022"
+date: "Mar 12, 2022"
 excerpt: "My experience working with an NGO organization as a teacher."
 cover_image: "/images/posts/ngo-internship.avif"
 ---

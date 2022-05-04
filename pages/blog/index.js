@@ -5,16 +5,21 @@ import Layout from "../../components/Layout";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Blog({posts}) {
-  console.log(posts);
+export default function Blog({ posts }) {
+  // console.log(posts);
+  // console.log(new Date(posts[0].metaData.date).getTime())
 
   return (
     <Layout title="Blog | Vikram Negi" blog={true}>
+
       <h1>Explore the Uncharted 🎉</h1>
       <p>
         I got into programming because I wanted to create my own little website, later I fell in love with the fascinating world of computers!
       </p>
+
       <h2>Posts:</h2>
+
+      {/* All Posts */}
       <div id="all-posts">
         {posts.map((post, index) => {
           return (
@@ -73,7 +78,9 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts
+      posts: posts.sort((a, b) => {
+        return new Date(a.metaData.date).getTime() > new Date(b.metaData.date).getTime() ? -1 : 1;
+      })
     }
   }
 }
