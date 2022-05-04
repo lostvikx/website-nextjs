@@ -107,10 +107,9 @@ article {
   color: var(--header-color);
 }
 
-article a:hover {
-  /* text-decoration: underline; */
+/* article a:hover {
   color: var(--grey);
-}
+} */
 
 article h1 {
   padding: 1em 0 0.5em;
@@ -243,7 +242,7 @@ blockquote {
 }
 
 .post:hover {
-  background-color: var(--alt-bg);
+  background-color: var(--alt-bg) !important;
 }
 
 .post-div {

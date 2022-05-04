@@ -9,11 +9,12 @@ export default function Blog({posts}) {
   console.log(posts);
 
   return (
-    <Layout title="Blog | Vikram Negi" blog={false}>
+    <Layout title="Blog | Vikram Negi" blog={true}>
       <h1>Welcome to my Blog Page 🎉</h1>
       <p>
         I got into programming because I wanted to create my own blog site, later I fell in love with the fascinating world of computers.
       </p>
+      <h2>Posts:</h2>
       <div id="all-posts">
         {posts.map((post, index) => {
           return (

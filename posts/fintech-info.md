@@ -5,8 +5,6 @@ excerpt: "Can FinTech really be the next big thing for Financial Services Indust
 cover_image: "/images/posts/fintech-info.avif"
 ---
 
-# A Brief on FinTech
-
 <!-- ![fintech application](/images/posts/fintech-info.avif) -->
 
 ## Prologue
@@ -33,7 +31,7 @@ Apart from money transactions, few fintech firms are providing consumers access 
 
 ## What are Neobanks?
 
-![not a neobank](./imgs/neo-bank-not.avif "Clearly this is not how a neobank looks like")
+![not a neobank](/images/posts/neo-bank-not.avif "Clearly this is not how a neobank looks like")
 
 A neobank, also known as an online bank or a digital bank is a virtual bank that operates exclusively online without traditional physical branch networks. Neobank is a fintech firm that provides digital and mobile-first financial solutions like payments, money transfers, money lending, and more.
 
