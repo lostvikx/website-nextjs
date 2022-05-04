@@ -244,6 +244,7 @@ blockquote {
 
 .post:hover {
   background-color: var(--alt-bg) !important;
+  cursor: pointer;
 }
 
 .post-div {

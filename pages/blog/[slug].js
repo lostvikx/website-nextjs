@@ -45,6 +45,7 @@ export default function BlogPost({ metaData, slug, content}) {
   );
 }
 
+// A dynamic route, that uses staticProps, needs this fn to define all the posible dynamic paths.
 export async function getStaticPaths() {
   const files = fs.readdirSync(path.join("posts"));
   const paths = files.map(filename => {

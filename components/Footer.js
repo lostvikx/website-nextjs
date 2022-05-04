@@ -1,15 +1,39 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <div className="bottom-footer">
       <hr className="footer-line" />
       <footer>
-        <div>&copy; 2022 MIT | Made with ❤️ by Vikram Negi</div>
+        <div>
+          &copy; 2022 MIT | Made with ❤️ by Vikram Negi
+        </div>
         <div className="contact-links">
-          <div><a href="https://github.com/lostvikx" target="_blank" rel="noopener noreferrer">GitHub</a></div>
-          <div><a href="mailto:viknegi0@gmail.com">Mail</a></div>
-          <div><a href="https://twitter.com/lostvikx" target="_blank" rel="noopener noreferrer">Twitter</a></div>
-          <div><a href="https://www.kaggle.com/viknegi" target="_blank" rel="noopener noreferrer">Kaggle</a></div>
-          <div><a href="https://linkedin.com/in/vikram-singh-negi/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+          <div>
+            <Link href="https://github.com/lostvikx">
+              <a target="_blank">GitHub</a>
+            </Link>
+          </div>
+          <div>
+            <Link href="mailto:viknegi0@gmail.com">
+              <a>Mail</a>
+            </Link>
+          </div>
+          <div>
+            <Link href="https://twitter.com/lostvikx">
+              <a target="_blank">Twitter</a>
+            </Link>
+          </div>
+          <div>
+            <Link href="https://www.kaggle.com/viknegi">
+              <a target="_blank">Kaggle</a>
+            </Link>
+          </div>
+          <div>
+            <Link href="https://linkedin.com/in/vikram-singh-negi/">
+              <a target="_blank">LinkedIn</a>
+            </Link>
+          </div>
         </div>
       </footer>
     </div>

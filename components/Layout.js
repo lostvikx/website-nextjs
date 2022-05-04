@@ -18,7 +18,11 @@ export default function Layout({ children, title, blog }) {
       </Head>
 
       <Nav />
-      {blog ? <article>{children}</article> : <main>{children}</main>}
+      {
+        blog 
+          ? <article>{children}</article> 
+          : <main>{children}</main>
+      }
       <Footer />
 
     </div>
