@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Head from "next/head";
 
-export default function Layout({ children, title }) {
+export default function Layout({ children, title, blog }) {
   return (
     <div className="layout">
       <Head>
@@ -17,10 +17,10 @@ export default function Layout({ children, title }) {
       <nav>
         <div className="nav-link">[ <Link href="/">Home</Link> ]</div>
         <div className="nav-link">[ <a href="/blog">Blog</a> ]</div>
-        <div className="nav-link">[ <a href="/" target="_blank" rel="noopener noreferrer">GitHub</a> ]</div>
+        <div className="nav-link">[ <a href="https://github.com/lostvikx" target="_blank" rel="noopener noreferrer">GitHub</a> ]</div>
         <div className="nav-link">[ <a href="/archive">Archive</a> ]</div>
       </nav>
-      <article>{children}</article>
+      {blog ? <article>{children}</article> : <main>{children}</main>}
       <div className="bottom-footer">
         <hr className="footer-line" />
         <footer>
