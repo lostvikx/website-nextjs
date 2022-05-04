@@ -6,7 +6,7 @@
   --green: #81c995;
   --yellow: #fcd56c;
   --alt-bg: #2c2c2c;
-  /* --grey: rgb(131, 131, 131); */
+  --grey: rgb(131, 131, 131);
 }
 
 * {
@@ -252,7 +252,7 @@ blockquote {
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
-  padding: 0.25em;
+  padding: 0.5em 0.25em;
 }
 
 .post-img {
@@ -277,13 +277,16 @@ blockquote {
 .post-info {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  gap: 0.2rem;
+  padding: 0.2em;
 }
 
 .post-title {
   font-size: 1.2rem;
 }
 
-.post-subject {
+.post-excerpt {
   font-size: 0.9rem;
 }
 

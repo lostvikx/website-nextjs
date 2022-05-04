@@ -1,7 +1,7 @@
 ---
 title: "A Brief on FinTech"
-date: "May 4, 2022"
-excerpt: "Is FinTech really the next big thing?"
+date: "Jan 17, 2021"
+excerpt: "Can FinTech really be the next big thing for Financial Services Industry?"
 cover_image: "/images/posts/fintech-info.avif"
 ---
 

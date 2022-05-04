@@ -27,7 +27,17 @@ export default function Blog({posts}) {
                       layout="fill"
                     />
                   </div>
-                  <div className="post-info"></div>
+                  <div className="post-info">
+                    <h3 className="post-title">
+                      {post.metaData.title}
+                    </h3>
+                    <p className="post-excerpt">
+                      {post.metaData.excerpt}
+                    </p>
+                    <p className="time-created">
+                      {post.metaData.date}
+                    </p>
+                  </div>
                 </div>
               </a>
             </div>
