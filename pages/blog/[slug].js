@@ -4,6 +4,15 @@ import matter from "gray-matter";
 import { marked } from "marked";
 import Layout from "../../components/Layout";
 import Link from "next/link";
+import Image from "next/image";
+
+const calcReadingTime = (articleText) => {
+  const wordsPerMinute = 150; // This is a good reading speed to understand the content.
+  const nWords = articleText.trim().replace(/[^\w\s\d]/g, "").split(/\s+/).length;
+  const time = Math.ceil(nWords / wordsPerMinute);
+
+  return `${time} to ${time+1} ${time == 1 ? "minute" : "minutes"}`;
+}
 
 export default function BlogPost({ metaData, slug, content}) {
 
@@ -16,8 +25,17 @@ export default function BlogPost({ metaData, slug, content}) {
       <div id="post-info">
         <p className="post-meta">Posted on {metaData.date}</p>
         {/* <p className="post-meta">Written by {metaData.author}</p> */}
-        
+        <p className="post-meta">Reading Time: {calcReadingTime(content)}</p>
       </div>
+
+      <figure className="cover-img">
+        <Image
+          src={metaData.cover_image || "/images/default-fallback-image.png"}
+          alt={metaData.title}
+          width="1000px"
+          height="600px"
+        />
+      </figure>
 
       <div 
         id="article" 

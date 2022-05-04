@@ -10,9 +10,9 @@ export default function Blog({posts}) {
 
   return (
     <Layout title="Blog | Vikram Negi" blog={true}>
-      <h1>Welcome to my Blog Page 🎉</h1>
+      <h1>Explore the Uncharted 🎉</h1>
       <p>
-        I got into programming because I wanted to create my own blog site, later I fell in love with the fascinating world of computers.
+        I got into programming because I wanted to create my own little website, later I fell in love with the fascinating world of computers!
       </p>
       <h2>Posts:</h2>
       <div id="all-posts">
@@ -30,13 +30,13 @@ export default function Blog({posts}) {
                   </div>
                   <div className="post-info">
                     <h3 className="post-title">
-                      {post.metaData.title}
+                      {post.metaData.title.slice(0, 50)}
                     </h3>
                     <p className="post-excerpt">
                       {post.metaData.excerpt}
                     </p>
                     <p className="time-created">
-                      {post.metaData.date}
+                      Posted on {post.metaData.date}
                     </p>
                   </div>
                 </div>

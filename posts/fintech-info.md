@@ -5,8 +5,6 @@ excerpt: "Can FinTech really be the next big thing for Financial Services Indust
 cover_image: "/images/posts/fintech-info.avif"
 ---
 
-<!-- ![fintech application](/images/posts/fintech-info.avif) -->
-
 ## Prologue
 For both individuals and businesses, banking hasn’t changed much from what it was for a few decades. Current accounts, saving accounts, credit cards, and mortgages are all, in essence, still the same.
 
