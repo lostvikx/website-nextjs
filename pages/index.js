@@ -1,5 +1,3 @@
-// import Head from 'next/head'
-import Nav from '../components/Nav'
 import Layout from '../components/Layout'
 
 const HomePage = () => {
@@ -10,8 +8,6 @@ const HomePage = () => {
 
 export default function Home() {
   return (
-    <>
-      <Layout title="Welcome To Paradise ✨ | lostvikx"><HomePage /></Layout>
-    </>
+    <Layout title="Welcome To Paradise ✨ | lostvikx"><HomePage /></Layout>
   )
 }
