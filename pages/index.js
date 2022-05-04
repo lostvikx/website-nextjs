@@ -10,8 +10,8 @@ const HomePage = () => {
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Layout title="Welcome To Paradise ✨ | lostvikx"><HomePage /></Layout>
-    </div>
+    </>
   )
 }
