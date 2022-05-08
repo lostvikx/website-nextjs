@@ -1,20 +1,15 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { marked } from "marked";
 import Layout from "../../components/Layout";
 import Link from "next/link";
 import Image from "next/image";
-import { calcReadingTime } from "../../utils/helper"
+import { calcReadingTime, createMarked } from "../../utils/helper";
 
 export default function BlogPost({ metaData, slug, content}) {
 
   return (
     <Layout title={`${metaData.title} | Vikram Negi`} blog = { true }>
-      {/* TODO: Add breadcrums */}
-
-      {/* {console.log(slug)} */}
-      
 
       <h1>{metaData.title}</h1>
 
@@ -38,7 +33,11 @@ export default function BlogPost({ metaData, slug, content}) {
 
       <div 
         id="article" 
-        dangerouslySetInnerHTML={{ __html: marked(content) }}>
+        dangerouslySetInnerHTML={{ __html: createMarked(content) }}
+      >
+      </div>
+
+      <div>
       </div>
     </Layout>
   );

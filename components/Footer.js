@@ -16,7 +16,7 @@ export default function Footer() {
           </div>
           <div>
             <Link href="mailto:viknegi0@gmail.com">
-              <a>Mail</a>
+              <a>Email</a>
             </Link>
           </div>
           <div>
