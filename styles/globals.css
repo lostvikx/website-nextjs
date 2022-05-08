@@ -103,12 +103,7 @@ footer div {
 /* article */
 article {
   margin: 1rem;
-  /* margin: 1rem 1rem 2rem; */
 }
-
-/* article a:hover {
-  color: var(--grey);
-} */
 
 article h1 {
   padding: 1em 0 0.5em;
@@ -157,10 +152,9 @@ article img {
 }
 
 code {
-  border-radius: 5px;
-  color: var(--yellow);
-  background-color: var(--alt-bg);
-  font-family: monospace;
+  color: var(--green);
+  /* font-family: monospace; */
+  font-size: 0.8rem;
 }
 
 article p {
@@ -172,6 +166,8 @@ article p {
 article pre {
   padding: 0.4em 0;
   border-radius: 5px;
+  background-color: var(--alt-bg);
+  padding: 1em 2em;
 }
 
 ::-webkit-scrollbar-track {

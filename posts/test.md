@@ -9,8 +9,6 @@ cover_image: ""
 
 This is a subject line. Please make sure not to include any html tags.
 
-![An image for me!](https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-cat-wearing-sunglasses-while-sitting-royalty-free-image-1571755145.jpg)
-
 ---
 
 My `name big man` is **Vikram Singh Negi**, a ==self-taught== `developer` who likes to hack his [laptop](https://mi.com/mi-notebook-14). The way you **move** is so [good](#how-to-use). This is because [ReactJS](https://reactjs.org) has states, we used it to store previous move data, record history.
@@ -33,6 +31,8 @@ Holly shit!
 
 Programming is my true calling, Vikram S. Negi!
 
+![An image for me!](https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-cat-wearing-sunglasses-while-sitting-royalty-free-image-1571755145.jpg)
+
 ```html
 <script>
   if (os === "linux") {
@@ -43,6 +43,8 @@ Programming is my true calling, Vikram S. Negi!
   console.log("you just got hacked!");
 </script>
 ```
+
+<script>console.log("you got hacked!")</script>
 
 ## Weather & Air Quality
 
