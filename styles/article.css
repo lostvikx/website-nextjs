@@ -1,0 +1,131 @@
+.breadcrums {
+  font-size: 0.95rem !important;
+}
+
+.breadcrums a {
+  padding: 0 0.5em;
+}
+
+.breadcrums a:first-child {
+  padding-left: 0;
+}
+
+.breadcrums a:last-child {
+  padding-right: 0;
+}
+
+.post-meta {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem !important;
+  color: var(--grey);
+}
+
+/* article */
+article {
+  margin: 1rem;
+}
+
+article h1 {
+  padding: 0.25em 0 0.5em;
+  font-size: 2rem;
+  color: var(--header-color);
+}
+
+article h2 {
+  padding: 0.75em 0 0.375em;
+  font-size: 1.5rem;
+  color: var(--header-color);
+}
+
+article h3 {
+  padding: 0.5em 0 0.25em;
+  font-size: 1.25rem;
+  color: var(--header-color);
+}
+
+article ul {
+  list-style-type: circle;
+  padding: 0.25em 0;
+  margin: 0 1rem;
+}
+
+article ul li {
+  padding: 0.25em;
+}
+
+.cover-img {
+  position: relative;
+  width: 100%;
+  max-height: 600px;
+  margin: 1.5rem auto;
+}
+
+article img {
+  max-width: 100%;
+  max-height: 600px;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 5px;
+  object-fit: cover;
+  /* margin: 0.5rem auto; */
+  margin: 0.5rem auto 1rem;
+}
+
+code {
+  color: var(--green);
+  /* font-family: monospace; */
+  font-size: 0.8rem;
+}
+
+article p {
+  font-size: 1rem;
+  padding: 0.4em 0;
+  /* text-align: justify; */
+}
+
+article pre {
+  padding: 0.4em 0;
+  border-radius: 5px;
+  background-color: var(--alt-bg);
+  padding: 1em 2em;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-corner {
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0);
+}
+
+hr {
+  width: 90%;
+  opacity: 70%;
+  margin: 1rem auto 2rem;
+}
+
+figcaption {
+  padding: 0.25em 0 !important;
+  font-style: italic;
+  font-size: 0.90rem !important;
+  color: var(--grey);
+}
+
+.img-cap {
+  color: var(--text);
+}
+
+blockquote {
+  padding: 1em 0.75em 1em 1.25em;
+  border-left: 0.35rem solid var(--green);
+  margin: 0.5rem 0;
+  background-color: var(--alt-bg);
+  border-radius: 5px;
+}
+
+.quote {
+  font-style: italic;
+  /* text-align: left !important; */
+}

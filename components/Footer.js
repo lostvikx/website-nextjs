@@ -6,7 +6,7 @@ export default function Footer() {
       <hr className="footer-line" />
       <footer>
         <div>
-          &copy; 2022 MIT | Made with ❤️ by Vikram Negi
+          &copy; 2022 | Made with ❤️ by Vikram Negi
         </div>
         <div className="contact-links">
           <div>

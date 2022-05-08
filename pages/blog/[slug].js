@@ -5,14 +5,7 @@ import { marked } from "marked";
 import Layout from "../../components/Layout";
 import Link from "next/link";
 import Image from "next/image";
-
-const calcReadingTime = (articleText) => {
-  const wordsPerMinute = 150; // This is a good reading speed to understand the content.
-  const nWords = articleText.trim().replace(/[^\w\s\d]/g, "").split(/\s+/).length;
-  const time = Math.ceil(nWords / wordsPerMinute);
-
-  return `${time} to ${time+1} ${time == 1 ? "minute" : "minutes"}`;
-}
+import { calcReadingTime } from "../../utils/helper"
 
 export default function BlogPost({ metaData, slug, content}) {
 
@@ -20,12 +13,18 @@ export default function BlogPost({ metaData, slug, content}) {
     <Layout title={`${metaData.title} | Vikram Negi`} blog = { true }>
       {/* TODO: Add breadcrums */}
 
+      {/* {console.log(slug)} */}
+      
+
       <h1>{metaData.title}</h1>
 
-      <div id="post-info">
-        <p className="post-meta">Posted on {metaData.date}</p>
-        {/* <p className="post-meta">Written by {metaData.author}</p> */}
-        <p className="post-meta">Reading Time: {calcReadingTime(content)}</p>
+      <div className="breadcrums">
+        <Link href="/">Home</Link> / <Link href="/blog">Blog</Link> / <Link href={`/blog/${slug}`}>{metaData.title}</Link>
+      </div>
+
+      <div className="post-meta">
+        <div>Posted on {metaData.date}</div>
+        <div>Reading Time: {calcReadingTime(content)}</div>
       </div>
 
       <figure className="cover-img">

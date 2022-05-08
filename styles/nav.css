@@ -1,0 +1,25 @@
+/* navbar */
+nav a {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  /* margin: 0.5rem 1rem 0; */
+  padding: 1em 1em;
+  /* color: var(--text); */
+  font-weight: 500;
+  position: sticky;
+  top: 0px;
+  background-color: var(--bg-color);
+  z-index: 100;
+}
+
+.nav-link {
+  font-size: 1.25rem;
+}
