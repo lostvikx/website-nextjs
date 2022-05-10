@@ -149,8 +149,8 @@ blockquote {
   font-size: 1.25rem;
   filter: grayscale(1);
   padding: 0.25em 0.5em;
-  /* border: 1px solid var(--grey);
-  border-radius: 50%; */
+  background: none;
+  border: none;
 }
 
 .face:hover {

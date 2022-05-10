@@ -9,15 +9,27 @@ import { useState } from "react";
 
 export default function BlogPost({ metaData, slug, content}) {
 
-  const [reaction, setReaction] = useState(1);
+  const [reaction, setReaction] = useState(null);
 
   const Reactions = () => {
     const faces = ["😭", "😐", "😀", "🤩"];
     return faces.map((face, i) => {
 
       return (reaction == i)
-        ? <div key={i} className="face face-selected">{face}</div> 
-        : <div key={i} className="face">{face}</div>
+        ? <button 
+            key={i} 
+            className="face face-selected" 
+            onClick={() => setReaction(null)}
+          >
+            {face}
+          </button> 
+        : <button 
+            key={i} 
+            className="face" 
+            onClick={() => setReaction(i)}
+          >
+            {face}
+          </button>
     });
   }
 
