@@ -5,8 +5,21 @@ import Layout from "../../components/Layout";
 import Link from "next/link";
 import Image from "next/image";
 import { calcReadingTime, createMarked } from "../../utils/helper";
+import { useState } from "react";
 
 export default function BlogPost({ metaData, slug, content}) {
+
+  const [reaction, setReaction] = useState(1);
+
+  const Reactions = () => {
+    const faces = ["😭", "😐", "😀", "🤩"];
+    return faces.map((face, i) => {
+
+      return (reaction == i)
+        ? <div key={i} className="face face-selected">{face}</div> 
+        : <div key={i} className="face">{face}</div>
+    });
+  }
 
   return (
     <Layout title={`${metaData.title} | Vikram Negi`} blog = { true }>
@@ -37,7 +50,13 @@ export default function BlogPost({ metaData, slug, content}) {
       >
       </div>
 
+      <hr />
+
       <div>
+        <h5 className="reaction-header">Was this article helpful?</h5>
+        <div className="reactions">
+          <Reactions />
+        </div>
       </div>
     </Layout>
   );

@@ -129,3 +129,37 @@ blockquote {
   font-style: italic;
   /* text-align: left !important; */
 }
+
+.reaction-header {
+  padding: 0.5em 0 0.25em;
+  font-size: 1.1rem;
+  text-align: center;
+  color: var(--header-color);
+}
+
+.reactions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0 0;
+}
+
+.face {
+  font-size: 1.25rem;
+  filter: grayscale(1);
+  padding: 0.25em 0.5em;
+  /* border: 1px solid var(--grey);
+  border-radius: 50%; */
+}
+
+.face:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  filter: grayscale(0);
+}
+
+.face-selected {
+  transform: scale(1.5);
+  filter: grayscale(0);
+}
