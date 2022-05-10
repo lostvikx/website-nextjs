@@ -6,6 +6,10 @@
   padding: 0 0.5em;
 }
 
+.breadcrums a:hover {
+  color: var(--text);
+}
+
 .breadcrums a:first-child {
   padding-left: 0;
 }
@@ -72,6 +76,11 @@ article img {
   margin: 0.5rem auto 1rem;
 }
 
+/* p::selection {
+  background-color: var(--blue);
+  color: var(--bg-color);
+} */
+
 code {
   color: var(--green);
   /* font-family: monospace; */
@@ -89,6 +98,7 @@ article pre {
   border-radius: 5px;
   background-color: var(--alt-bg);
   padding: 1em 2em;
+  white-space: pre-wrap;
 }
 
 ::-webkit-scrollbar-track {
@@ -103,7 +113,7 @@ article pre {
 hr {
   width: 90%;
   opacity: 70%;
-  margin: 1rem auto 2rem;
+  margin: 2rem auto 2rem;
 }
 
 figcaption {

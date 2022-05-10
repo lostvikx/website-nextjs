@@ -30,6 +30,10 @@ body {
   line-height: 1.45;
 }
 
+p {
+  font-size: 1rem;
+}
+
 .layout {
   margin: 0 auto 1rem;
   display: flex;
@@ -63,7 +67,7 @@ footer {
 }
 
 .footer-line {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 footer div {
