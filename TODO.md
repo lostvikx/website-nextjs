@@ -1,4 +1,5 @@
 # ToDo List:
 - [*] Add breadcrums
-- [ ] Add a like button in articles
+- [*] Add reactions about the article
+- [ ] Not sure: Store the number of aricle likes
 - [ ] Styling Non-articles
