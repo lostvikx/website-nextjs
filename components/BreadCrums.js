@@ -11,24 +11,28 @@ export default function Breadcrums({ endpointTitle }) {
   const Crumbs = route.map((crumb, i) => {
     crumb.length ? fullPath += `/${crumb}` : null;
     return (
-      <Link href={!fullPath ? "/" : fullPath} key={i}>
-        {
-          (route.length - 1 === i) 
-            ? endpointTitle
-            : (crumb.length) 
-              ? crumb[0].toUpperCase() + crumb.slice(1,)
-            : "Home"
-        }
-      </Link>
+      <div key={i}>
+        <Link href={!fullPath ? "/" : fullPath}>
+          <a>
+            {
+              (route.length - 1 === i) 
+                ? endpointTitle
+                : (crumb.length) 
+                  ? crumb[0].toUpperCase() + crumb.slice(1,)
+                : "Home"
+            }
+          </a>
+        </Link>
+        <span>/</span>
+      </div>
     );
   });
 
   console.log(Crumbs);
 
   return (
-    <div className="breadcrums">
-      {/* <Link href="/">Home</Link> / <Link href="/blog">Blog</Link> / <Link href={endpoint}>{endpointTitle}</Link> */}
-      {Crumbs}
+    <div className="breadcrums flex-row">
+      { Crumbs }
     </div>
   );
 }

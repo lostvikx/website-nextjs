@@ -1,21 +1,26 @@
 .breadcrums {
   font-size: 0.95rem !important;
+  justify-content: start;
 }
 
-.breadcrums a {
-  padding: 0 0.5em;
+.breadcrums a, .breadcrums div {
+  margin-right: 0.75rem;
 }
 
 .breadcrums a:hover {
   color: var(--text);
 }
 
-.breadcrums a:first-child {
+/* .breadcrums a:first-child, .breadcrums div:first-child {
   padding-left: 0;
 }
 
-.breadcrums a:last-child {
+.breadcrums a:last-child, .breadcrums div:last-child {
   padding-right: 0;
+} */
+
+.breadcrums div:last-child span {
+  display: none;
 }
 
 .post-meta {

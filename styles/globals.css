@@ -124,4 +124,13 @@ footer div {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
