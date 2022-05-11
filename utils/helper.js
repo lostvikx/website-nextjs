@@ -5,7 +5,7 @@ const calcReadingTime = (articleText) => {
   const nWords = articleText.trim().replace(/[^\w\s\d]/g, "").split(/\s+/).length;
   const time = Math.ceil(nWords / wordsPerMinute);
 
-  return `${time} to ${time + 1} ${time == 1 ? "minute" : "minutes"}`;
+  return `${time} to ${time + 1} ${time == 1 ? "minute read" : "minutes read"}`;
 }
 
 // Customize the marked parser!

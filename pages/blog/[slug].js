@@ -36,16 +36,11 @@ export default function BlogPost({ metaData, slug, content}) {
   return (
     <Layout title={`${metaData.title} | Vikram Negi`} blog = { true }>
 
-      <h1>{metaData.title}</h1>
 
       <div className="breadcrums">
         <Link href="/">Home</Link> / <Link href="/blog">Blog</Link> / <Link href={`/blog/${slug}`}>{metaData.title}</Link>
       </div>
-
-      <div className="post-meta">
-        <div>Posted on {metaData.date}</div>
-        <div>Reading Time: {calcReadingTime(content)}</div>
-      </div>
+      
 
       <figure className="cover-img">
         <Image
@@ -55,6 +50,14 @@ export default function BlogPost({ metaData, slug, content}) {
           height="600px"
         />
       </figure>
+
+      <div className="post-meta">
+        <div>{metaData.date} · {calcReadingTime(content)}</div>
+        {/* <div>Reading Time: {calcReadingTime(content)}</div> */}
+      </div>
+
+      <h1>{metaData.title}</h1>
+
 
       <div 
         id="article" 
