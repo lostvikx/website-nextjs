@@ -12,7 +12,7 @@ export default function Blog({ posts }) {
   return (
     <Layout title="Blog | Vikram Negi" blog={true}>
 
-      <h1>Explore the Uncharted 🎉</h1>
+      <h1>Explore the Uncharted 🔭</h1>
       <p>
         I got into programming because I wanted to create my own little website, later I fell in love with the fascinating world of computers!
       </p>

@@ -47,7 +47,7 @@ p {
 }
 
 .bottom-footer{
-  margin-top: auto;
+  margin: 0 1rem 1rem;
 }
 
 a {
@@ -81,6 +81,12 @@ footer div {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+hr {
+  /* width: 90%; */
+  opacity: 70%;
+  margin: 2rem auto 2rem;
 }
 
 /* #post-tags {

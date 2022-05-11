@@ -124,12 +124,6 @@ article pre {
   background: rgba(0, 0, 0, 0);
 }
 
-hr {
-  width: 90%;
-  opacity: 70%;
-  margin: 2rem auto 2rem;
-}
-
 figcaption {
   padding: 0.25em 0 !important;
   font-style: italic;
