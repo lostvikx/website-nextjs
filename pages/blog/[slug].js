@@ -5,33 +5,11 @@ import Layout from "../../components/Layout";
 import Link from "next/link";
 import Image from "next/image";
 import { calcReadingTime, createMarked } from "../../utils/helper";
-import { useState } from "react";
+import Reactions from "../../components/Reactions";
 
 export default function BlogPost({ metaData, slug, content}) {
 
-  const [reaction, setReaction] = useState(null);
-
-  const Reactions = () => {
-    const faces = ["😭", "😐", "😀", "🤩"];
-    return faces.map((face, i) => {
-
-      return (reaction == i)
-        ? <button 
-            key={i} 
-            className="face face-selected" 
-            onClick={() => setReaction(null)}
-          >
-            {face}
-          </button> 
-        : <button 
-            key={i} 
-            className="face" 
-            onClick={() => setReaction(i)}
-          >
-            {face}
-          </button>
-    });
-  }
+  
 
   return (
     <Layout title={`${metaData.title} | Vikram Negi`} blog = { true }>
@@ -69,9 +47,7 @@ export default function BlogPost({ metaData, slug, content}) {
 
       <div>
         <h5 className="reaction-header">Was this article helpful?</h5>
-        <div className="reactions">
           <Reactions />
-        </div>
       </div>
     </Layout>
   );

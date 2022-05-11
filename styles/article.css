@@ -163,8 +163,20 @@ blockquote {
   font-size: 1.25rem;
   filter: grayscale(1);
   padding: 0.25em 0.5em;
-  background: none;
-  border: none;
+  /* background: none;
+  border: none; */
+}
+
+.hits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hit {
+  font-size: 1rem;
+  padding: 0.25em 0.5em;
 }
 
 .face:hover {
