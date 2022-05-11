@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-export default function Breadcrums({ endpointTitle }) {
+export default function Breadcrumbs({ endpointTitle }) {
   const endpoint = useRouter().asPath;
   const route = endpoint.split("/");
   // console.log(route);
@@ -28,7 +28,7 @@ export default function Breadcrums({ endpointTitle }) {
     );
   });
 
-  console.log(Crumbs);
+  // console.log(Crumbs);
 
   return (
     <div className="breadcrums flex-row">
