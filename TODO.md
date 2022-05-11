@@ -1,5 +1,6 @@
 # ToDo List:
 - [*] Add breadcrums
 - [*] Add reactions about the article
-- [ ] Not sure: Store the number of aricle likes
-- [ ] Styling Non-articles
+- [*] Submit feedback
+- [ ] Build a cool looking about page
+- [ ] Work on the home page

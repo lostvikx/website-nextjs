@@ -14,7 +14,10 @@ function createMarked(content) {
   const renderer = {
     link(href, title, text) {
       return `<a target="_blank" href=${href} title=${title}>${text}</a>`;
-    }
+    },
+    // image(href, title, text) {
+    //   return `<img src=${href} alt=${text} width="1000px" height="600px"/>`
+    // }
   }
 
   marked.use({ renderer });
