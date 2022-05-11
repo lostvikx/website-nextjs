@@ -17,7 +17,7 @@ export default function Blog({ posts }) {
         I got into programming because I wanted to create my own little website, later I fell in love with the fascinating world of computers!
       </p>
 
-      <h2>Posts:</h2>
+      <h2>Posts</h2>
 
       {/* All Posts */}
       <div id="all-posts">

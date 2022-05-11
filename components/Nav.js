@@ -7,6 +7,9 @@ export default function Nav() {
         [ <Link href="/"><a>Home</a></Link> ]
       </div>
       <div className="nav-link">
+        [ <Link href="/about"><a>About</a></Link> ]
+      </div>
+      <div className="nav-link">
         [ <Link href="/blog"><a>Blog</a></Link> ]
       </div>
       <div className="nav-link">

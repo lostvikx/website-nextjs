@@ -19,7 +19,7 @@ export default function BlogPost({ metaData, slug, content}) {
   }
 
   function submitArticleRating() {
-    console.log(reaction);
+    console.log(`Article Rating: ${reaction} out of 3`);
     setRatingFormSubmit(true);
   }
 
@@ -60,7 +60,7 @@ export default function BlogPost({ metaData, slug, content}) {
             </button>
           </div>
         : <div className="rating-thanks flex-col">
-          <div className="panda">🐼</div>
+          <div className="thanks-emoji">✨</div>
             <h4>Thank You!</h4>
             <p>The rating was submitted successfully.</p>
           </div>
@@ -86,8 +86,7 @@ export default function BlogPost({ metaData, slug, content}) {
       </figure>
 
       <div className="post-meta">
-        <div>{metaData.date} · {calcReadingTime(content)}</div>
-        {/* <div>Reading Time: {calcReadingTime(content)}</div> */}
+        {metaData.date} | {calcReadingTime(content)}
       </div>
 
       <h1>{metaData.title}</h1>
@@ -100,21 +99,6 @@ export default function BlogPost({ metaData, slug, content}) {
       </div>
 
       <hr />
-
-      {/* <div className="post-rating flex-col">
-        <h5 className="reaction-header">Was this article helpful?</h5>
-        <div className="reactions">
-          {Faces}
-        </div>
-          <button 
-            type="submit" 
-            className="reaction-sub btn"
-            onClick={submitArticleRating}
-            title="Submit rating"
-          >
-            Submit
-          </button>
-      </div> */}
       <Ratings />
     </Layout>
   );
