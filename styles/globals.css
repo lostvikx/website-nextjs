@@ -8,6 +8,7 @@
   --alt-bg: #2c2c2c;
   --grey: rgb(131, 131, 131);
   --header-color: #fdfdfd;
+  --purple: #cdd2fe;
 }
 
 * {
@@ -110,7 +111,7 @@ footer div {
   border: none;
   background: none;
   color: var(--bg-color);
-  background-color: var(--pink);
+  background-color: var(--purple);
   padding: 0.75em 1.25em;
   border-radius: 5px;
   font-size: 0.8rem;

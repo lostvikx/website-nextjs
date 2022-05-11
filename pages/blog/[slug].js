@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { calcReadingTime, createMarked } from "../../utils/helper";
 import { useState } from "react";
+// import Breadcrums from "../../components/BreadCrums";
 
 export default function BlogPost({ metaData, slug, content}) {
 
@@ -70,9 +71,10 @@ export default function BlogPost({ metaData, slug, content}) {
   return (
     <Layout title={`${metaData.title} | Vikram Negi`} blog = { true }>
 
+      {/* <Breadcrums endpointTitle={metaData.title} /> */}
 
       <div className="breadcrums">
-        <Link href="/">Home</Link> / <Link href="/blog">Blog</Link> / <Link href={`/blog/${slug}`}>{metaData.title}</Link>
+        <Link href="/"><a>Home</a></Link> / <Link href="/blog">Blog</Link> / <Link href={`/blog/${slug}`}>{metaData.title}</Link>
       </div>
       
 

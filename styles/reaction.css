@@ -51,3 +51,7 @@
 .thanks-emoji {
   font-size: 4rem;
 }
+
+.reaction-sub:hover {
+  background-color: var(--green);
+}
