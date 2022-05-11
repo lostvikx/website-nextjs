@@ -40,14 +40,14 @@ p {
 }
 
 .layout {
-  margin: 0 auto 1rem;
+  margin: auto 1rem;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
 .bottom-footer{
-  margin: 0 1rem 1rem;
+  margin: auto 1rem 1rem;
 }
 
 a {

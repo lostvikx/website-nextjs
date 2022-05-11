@@ -67,7 +67,7 @@ export default function BlogPost({ metaData, slug, content}) {
         : <div className="rating-thanks flex-col">
           <div className="thanks-emoji">✨</div>
             <h4>Thank You!</h4>
-            <p>The rating was submitted successfully.</p>
+            <p>The feedback was submitted successfully.</p>
           </div>
     );
   }
