@@ -156,7 +156,7 @@ blockquote {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin: 2rem 0 0;
+  /* margin: 2rem 0 0; */
 }
 
 .face {
@@ -188,4 +188,8 @@ blockquote {
 .face-selected {
   transform: scale(1.5);
   filter: grayscale(0);
+}
+
+.post-rating {
+  gap: 2rem;
 }

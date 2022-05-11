@@ -5,11 +5,67 @@ import Layout from "../../components/Layout";
 import Link from "next/link";
 import Image from "next/image";
 import { calcReadingTime, createMarked } from "../../utils/helper";
-import Reactions from "../../components/Reactions";
+import { useState } from "react";
 
 export default function BlogPost({ metaData, slug, content}) {
 
-  
+  const [reaction, setReaction] = useState(null);
+  const [ratingFormSubmit, setRatingFormSubmit] = useState(false);
+
+  // Event handlers
+  function handleFaceClick(key) {
+    // visual change
+    setReaction(key);
+  }
+
+  function submitArticleRating() {
+    console.log(reaction);
+    setRatingFormSubmit(true);
+  }
+
+  const faces = ["😭", "😐", "😀", "🤩"];
+  const Faces = faces.map((face, i) => {
+    return (reaction == i)
+      ? <div
+        key={i}
+        className="face face-selected"
+        onClick={() => handleFaceClick(null)}
+      >
+        {face}
+      </div>
+      : <div
+        key={i}
+        className="face"
+        onClick={() => handleFaceClick(i)}
+      >
+        {face}
+      </div>
+  });
+
+  const Ratings = () => {
+    return (
+      (!ratingFormSubmit) 
+        ? <div className="post-rating flex-col">
+            <h5 className="reaction-header">Was this article helpful?</h5>
+            <div className="reactions">
+              {Faces}
+            </div>
+            <button
+              type="submit"
+              className="reaction-sub btn"
+              onClick={submitArticleRating}
+              title="Submit rating"
+            >
+              Submit
+            </button>
+          </div>
+        : <div className="rating-thanks flex-col">
+          <div className="panda">🐼</div>
+            <h4>Thank You!</h4>
+            <p>The rating was submitted successfully.</p>
+          </div>
+    );
+  }
 
   return (
     <Layout title={`${metaData.title} | Vikram Negi`} blog = { true }>
@@ -45,10 +101,21 @@ export default function BlogPost({ metaData, slug, content}) {
 
       <hr />
 
-      <div>
+      {/* <div className="post-rating flex-col">
         <h5 className="reaction-header">Was this article helpful?</h5>
-          <Reactions />
-      </div>
+        <div className="reactions">
+          {Faces}
+        </div>
+          <button 
+            type="submit" 
+            className="reaction-sub btn"
+            onClick={submitArticleRating}
+            title="Submit rating"
+          >
+            Submit
+          </button>
+      </div> */}
+      <Ratings />
     </Layout>
   );
 }

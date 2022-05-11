@@ -109,3 +109,22 @@ footer div {
 .tag:focus-within {
   background-color: var(--grey);
 }  */
+
+.btn {
+  border: none;
+  background: none;
+  color: var(--bg-color);
+  background-color: var(--pink);
+  padding: 0.75em 1.25em;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
