@@ -4,10 +4,10 @@ export default function About() {
   return (
     <Layout title="About | Vikram Negi" blog={true}>
       
-      <h1>A Breif History of Me</h1>
+      <h1>The Entire History of Me</h1>
 
       <p>
-        I&apos;m a self-taught developer who enjoys using his computer for doing productive things. I was always passionate about computers since the tender age of 10. It all started when my parents bought me a brand new desktop computer.
+        I&apos;m a self-taught developer who enjoys using his computer for doing productive things. I was always passionate about computers since the tender age of ten. It all started when my parents bought me a brand new desktop computer.
       </p>
 
       <p>
