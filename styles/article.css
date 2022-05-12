@@ -24,14 +24,15 @@
 }
 
 .post-meta {
-  font-style: italic;
+  /* font-style: italic; */
   margin-bottom: 0.5rem;
   font-size: 0.95rem !important;
   color: var(--grey);
 }
 
 .post-meta span {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  color: var(--purple);
 }
 
 h1, h2, h3, h4, h5 {

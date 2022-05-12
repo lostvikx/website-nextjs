@@ -8,7 +8,7 @@ export default function Footer() {
         <div>
           &copy; 2022 | Made with ❤️ by Vikram Negi
         </div>
-        <div className="contact-links">
+        <div className="contact-links flex-row">
           <div>
             <Link href="https://github.com/lostvikx">
               <a target="_blank">GitHub</a>

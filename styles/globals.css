@@ -76,11 +76,19 @@ footer div {
 }
 
 .contact-links {
-  display: flex;
+  /* display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   gap: 1rem;
+}
+
+.contact-links a {
+  color: var(--pink);
+}
+
+.contact-links a:hover {
+  color: var(--green);
 }
 
 hr {

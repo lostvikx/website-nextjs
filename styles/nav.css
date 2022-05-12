@@ -1,7 +1,12 @@
 /* navbar */
-nav a {
+.nav-link a {
   font-weight: 500;
   font-size: 1.2rem;
+  color: var(--pink);
+}
+
+.nav-link a:hover {
+  color: var(--green);
 }
 
 nav {
