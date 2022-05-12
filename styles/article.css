@@ -7,9 +7,9 @@
   margin-right: 0.75rem;
 }
 
-.breadcrums a:hover {
+/* .breadcrums a:hover {
   color: var(--text);
-}
+} */
 
 /* .breadcrums a:first-child, .breadcrums div:first-child {
   padding-left: 0;
@@ -28,6 +28,10 @@
   margin-bottom: 0.5rem;
   font-size: 0.95rem !important;
   color: var(--grey);
+}
+
+.post-meta span {
+  font-size: 1.5rem;
 }
 
 h1, h2, h3, h4, h5 {

@@ -1,7 +1,7 @@
 /* All blog posts page */
 
 #all-posts {
-  margin: 0 1rem 1rem;
+  margin: 0 0 1rem;
   /* border: #ff4081 2px solid; */
   display: flex;
   flex-direction: column;
@@ -86,7 +86,7 @@
     gap: 0.25rem;
     background-color: var(--alt-bg);
     border-radius: 5px;
-    padding: 0;
+    padding: 0.5em;
   }
 
   .post-img {

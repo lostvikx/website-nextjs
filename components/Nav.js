@@ -4,16 +4,16 @@ export default function Nav() {
   return (
     <nav>
       <div className="nav-link">
-        [ <Link href="/"><a>Home</a></Link> ]
+        <Link href="/"><a>Home</a></Link>
       </div>
       <div className="nav-link">
-        [ <Link href="/about"><a>About</a></Link> ]
+        <Link href="/about"><a>About</a></Link>
       </div>
       <div className="nav-link">
-        [ <Link href="/blog"><a>Blog</a></Link> ]
+        <Link href="/blog"><a>Blog</a></Link>
       </div>
       <div className="nav-link">
-        [ <Link href="/archive"><a>Archive</a></Link> ]
+        <Link href="/archive"><a>Archive</a></Link>
       </div>
     </nav>
   )

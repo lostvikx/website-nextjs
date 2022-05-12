@@ -88,11 +88,12 @@ export default function BlogPost({ metaData, slug, content}) {
           alt={metaData.title}
           width="1000px"
           height="600px"
+          priority
         />
       </figure>
 
       <div className="post-meta">
-        {metaData.date} | {calcReadingTime(content)}
+        {metaData.date} <span>|</span> {calcReadingTime(content)}
       </div>
 
       <h1>{metaData.title}</h1>
