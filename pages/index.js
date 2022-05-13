@@ -21,7 +21,7 @@ export default function Home() {
           <p>I&apos;m a self-taught developer who enjoys using his computer to do productive things in life.</p>
           <div className="fn-btns flex-row">
             <a className="btn" href="mailto:viknegi0@gmail.com">Contact</a>
-            <a className="btn" href="/resume_vikram_negi.pdf" download>Download Resume</a>
+            <a className="btn" href="/resume-vikram-negi.pdf" download>Download Resume</a>
           </div>
         </div>
       </section>
