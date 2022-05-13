@@ -53,15 +53,11 @@ export default function Nav({ activePage }) {
       </div> */}
 
       <div className={`nav flex-row ${active ? "active" : ""}`}>
-        {/* <div className="nav-link">
-          <Link href="/about"><a>About</a></Link>
-        </div>
+        
         <div className="nav-link">
-          <Link href="/blog"><a>Blog</a></Link>
+          <Link href="/"><a>Resume</a></Link>
         </div>
-        <div className="nav-link">
-          <Link href="/archive"><a>Archive</a></Link>
-        </div> */}
+
         {tabs}
       </div>
 

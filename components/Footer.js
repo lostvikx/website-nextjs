@@ -6,7 +6,7 @@ export default function Footer() {
       <hr className="footer-line" />
       <footer>
         <div>
-          &copy; 2022 | MIT License | Made with ❤️ by Vikram Negi
+          Copyright &copy; 2022 Vikram Negi. All Rights Reserved.
         </div>
         <div className="contact-links flex-row">
           <div>
