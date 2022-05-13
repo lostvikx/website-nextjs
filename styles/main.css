@@ -114,17 +114,17 @@ blockquote {
   }
 
   .post-meta, .breadcrumbs span, footer>div:nth-child(1) {
-    font-size: 0.85rem !important;
+    font-size: 0.75rem !important;
   }
 
-  main h1 {
-    font-size: 1.75rem;
-    padding: 0.15em 0;
+  main h1, article h1 {
+    font-size: 1.5rem !important;
+    padding: 0.25em 0 !important;
   }
 
-  main h2 {
-    font-size: 1.25rem;
-    padding: 0.5em 0 0.1em;
+  main h2, article h2 {
+    font-size: 1.25rem !important;
+    padding: 0.5em 0 0.1em !important;
   }
 
   blockquote {
@@ -157,6 +157,6 @@ article h4 {
 
 article p {
   padding: 0.25em 0 0.5em;
-  font-size: 1rem;
+  font-size: 100%;
 }
 

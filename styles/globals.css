@@ -135,3 +135,46 @@ h1, h2, h3, h4, h5, h6 {
   /* font-size: 150%; */
 }
 
+@media only screen and (max-width: 768px) {
+
+  .showcase {
+    flex-flow: column !important;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  /* .show-text {
+    display: none;
+    font-size: 95%;
+  } */
+
+  .show-text {
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: auto !important;
+    margin-left: 0 !important;
+    position: absolute;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .fn-btns {
+    gap: 0.5rem !important;
+    margin: 1rem 0 !important;
+  }
+
+  .fn-btns a {
+    font-size: 0.8rem !important;
+  }
+
+  .show-img img {
+    filter: brightness(0.35);
+  }
+
+  .show-text > h1 {
+    font-size: 1.8rem !important;
+    padding: 0.2em 0 !important;
+  }
+
+}
