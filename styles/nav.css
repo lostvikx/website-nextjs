@@ -5,10 +5,6 @@
   color: var(--purple);
 }
 
-nav > .nav-link:nth-child(1) a {
-  font-size: 1.5rem;
-}
-
 .nav-link a:hover {
   color: var(--yellow);
 }
@@ -47,17 +43,13 @@ nav {
   background-color: var(--text);
 }
 
-.active-tab > a {
-  color: var(--yellow);
-}
-
 @media only screen and (max-width: 768px) {
 
   nav {
-    flex-flow: row wrap;
-    gap: 0;
+    flex-flow: row;
     align-items: center;
     justify-content: space-between;
+    gap: 0;
   }
 
   .nav {
@@ -85,6 +77,10 @@ nav {
     text-align: center;
   }
 
+  .nav-link:nth-child(1) {
+    width: auto;
+  }
+
   .nav-link > a {
     display: block;
     width: 100vw;
@@ -92,33 +88,25 @@ nav {
     margin: 1rem;
   }
 
-  nav > .nav-link > a:nth-child(1) {
-    padding: 0;
-  }
-
   .active {
     background-color: var(--bg-color);
   }
 
-  /* logo */
-  nav > .nav-link:nth-child(1) {
-    width: auto;
-    padding: 0;
-  }
-
-  nav > .nav-link:nth-child(1) a {
-    font-size: 1.5rem;
-  }
-
   /* first link in menu */
   .nav .nav-link:nth-child(1) {
-    margin-top: 3rem;
+    margin-top: 2.25rem;
   }
+
+  /* .nav .nav-link:nth-child(1) */
 
   .nav-link a {
     font-size: 2rem;
     width: 100%;
     margin: 0;
+  }
+
+  .nav-link.name:first-child a {
+    font-size: 1rem;
   }
 
   .hamburger {
@@ -147,7 +135,7 @@ nav {
 
 }
 
-/* a {
+a {
   display: inline-block;
   position: relative;
 }
@@ -168,4 +156,4 @@ a::after {
 a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
-} */
+}

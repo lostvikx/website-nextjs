@@ -1,8 +1,7 @@
 import '../styles/globals.css';
 import "../styles/nav.css";
-import "../styles/article.css";
-import "../styles/posts.css";
-import "../styles/reaction.css";
+import "../styles/main.css";
+import "../styles/responsive.css";
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
