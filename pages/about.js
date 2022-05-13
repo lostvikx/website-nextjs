@@ -14,7 +14,7 @@ export default function About() {
         I didn&apos;t know what the internet was back then, so I used to mess around on my computer by creating doodles on MS Paint and playing those retro in-build Windows XP games.
       </p>
 
-      <h2>The Journey ⚓</h2>
+      <h2>Coding Journey</h2>
 
       <p className="article-p">
         Learning to code on your own comes with its own sets of challenges. Such as not knowing how to start learning or what to learn in the first place. It&apos;s the persistent effort and determination that allowed me to look at the other side of the wall.

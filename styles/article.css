@@ -1,25 +1,26 @@
-.breadcrums {
+/* breadcrumbs */
+.breadcrumbs {
   font-size: 0.95rem !important;
   justify-content: start;
 }
 
-.breadcrums a, .breadcrums div {
+.breadcrumbs a {
+  color: var(--purple);
+}
+
+.breadcrumbs a:hover {
+  color: var(--yellow);
+}
+
+.breadcrumbs a, .breadcrumbs div {
   margin-right: 0.75rem;
 }
 
-/* .breadcrums a:hover {
-  color: var(--text);
-} */
-
-/* .breadcrums a:first-child, .breadcrums div:first-child {
-  padding-left: 0;
+.breadcrumbs div:last-child > a {
+  color: var(--yellow);
 }
 
-.breadcrums a:last-child, .breadcrums div:last-child {
-  padding-right: 0;
-} */
-
-.breadcrums div:last-child span {
+.breadcrumbs div:last-child > span {
   display: none;
 }
 
@@ -167,7 +168,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 90%;
   }
 
-  .post-meta, .breadcrums span, footer>div:nth-child(1) {
+  .post-meta, .breadcrumbs span, footer>div:nth-child(1) {
     font-size: 0.85rem !important;
   }
 

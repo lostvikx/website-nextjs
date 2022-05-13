@@ -9,7 +9,9 @@ export default function Breadcrumbs({ endpointTitle }) {
   let fullPath = "";
 
   const Crumbs = route.map((crumb, i) => {
-    crumb.length ? fullPath += `/${crumb}` : null;
+
+    (crumb.length) ? fullPath += `/${crumb}` : null;
+
     return (
       <div key={i}>
         <Link href={!fullPath ? "/" : fullPath}>
@@ -31,7 +33,7 @@ export default function Breadcrumbs({ endpointTitle }) {
   // console.log(Crumbs);
 
   return (
-    <div className="breadcrums flex-row">
+    <div className="breadcrumbs flex-row">
       { Crumbs }
     </div>
   );

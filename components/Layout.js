@@ -17,12 +17,14 @@ export default function Layout({ children, title, blog }) {
         />
       </Head>
 
-      <Nav />
+      <Nav activePage={title} />
+
       {
         blog 
           ? <article>{children}</article> 
           : <main>{children}</main>
       }
+
       <Footer />
 
     </div>

@@ -8,7 +8,7 @@
   --green: #81c995;
   --yellow: #fcd56c;
   --alt-bg: #2c2c2c;
-  --grey: rgb(131, 131, 131);
+  --grey: rgb(165, 165, 165);
   --header-color: #fdfdfd;
   --purple: #cdd2fe;
 }
@@ -88,7 +88,7 @@ footer div {
 }
 
 .contact-links a:hover {
-  color: var(--green);
+  color: var(--purple);
 }
 
 hr {

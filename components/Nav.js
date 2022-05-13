@@ -2,13 +2,31 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function Nav() {
+export default function Nav({ activePage }) {
 
   const [active, setActive] = useState(false);
+
+  const pages = ["about", "blog", "archive"];
+  const page = activePage.trim().split(" | ")[0].toLowerCase();
+  // console.log(page);
 
   function handleHamburgerClick() {
     setActive(prevActive => !prevActive);
   }
+
+  const tabs = pages.map((tab, i) => {
+
+    const className = ["nav-link"];
+    if (page === tab) {
+      className.push("active-tab");
+    }
+
+    return (
+      <div className={className.join(" ")} key={i}>
+        <Link href={`/${tab}`}><a>{tab[0].toUpperCase()+tab.slice(1,)}</a></Link>
+      </div>
+    );
+  });
 
   return (
     <nav>
@@ -35,7 +53,7 @@ export default function Nav() {
       </div> */}
 
       <div className={`nav flex-row ${active ? "active" : ""}`}>
-        <div className="nav-link">
+        {/* <div className="nav-link">
           <Link href="/about"><a>About</a></Link>
         </div>
         <div className="nav-link">
@@ -43,7 +61,8 @@ export default function Nav() {
         </div>
         <div className="nav-link">
           <Link href="/archive"><a>Archive</a></Link>
-        </div>
+        </div> */}
+        {tabs}
       </div>
 
       <div className={`hamburger ${active ? "active" : ""}`} onClick={handleHamburgerClick}>

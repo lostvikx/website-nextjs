@@ -2,7 +2,7 @@
 .nav-link a {
   font-weight: 400;
   font-size: 1.25rem;
-  color: var(--yellow);
+  color: var(--purple);
 }
 
 nav > .nav-link:nth-child(1) a {
@@ -10,7 +10,7 @@ nav > .nav-link:nth-child(1) a {
 }
 
 .nav-link a:hover {
-  color: var(--green);
+  color: var(--yellow);
 }
 
 nav {
@@ -45,6 +45,10 @@ nav {
   margin: 0.25rem auto;
   transition: all 0.2s ease-in-out;
   background-color: var(--text);
+}
+
+.active-tab > a {
+  color: var(--yellow);
 }
 
 @media only screen and (max-width: 768px) {
