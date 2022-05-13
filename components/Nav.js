@@ -27,14 +27,14 @@ export default function Nav() {
         </div>
         
         <div className="nav-link">
-          <Link href="/"><a>GitHub</a></Link>
+          <Link href="https://github.com/lostvikx"><a target="_blank">GitHub</a></Link>
         </div>
 
         <div className="nav-link">
           <Link 
-            href="/"
+            href="/about"
           >
-            <a target="_blank">About</a>
+            <a target="">About</a>
           </Link>
         </div>
 

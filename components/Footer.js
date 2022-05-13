@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-export default function Footer() {
+export default function Footer({blog}) {
   return (
-    <div className="bottom-footer">
-      <hr className="footer-line" />
+    <div className={blog ? "bottom-footer" : "btm-foot"}>
+      {/* <hr className="footer-line" /> */}
       <footer>
         <div>
           Copyright &copy; 2022 Vikram Negi. All Rights Reserved.

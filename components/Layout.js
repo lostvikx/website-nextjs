@@ -19,15 +19,15 @@ export default function Layout({ children, title, blog }) {
 
       <Nav />
 
-      {/* {
+      {
         blog 
           ? <article>{children}</article> 
           : <main>{children}</main>
-      } */}
+      }
 
-      <main>{children}</main>
+      {/* <main>{children}</main> */}
 
-      <Footer />
+      <Footer blog={blog} />
 
     </div>
   );
