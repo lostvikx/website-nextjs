@@ -108,7 +108,7 @@ export default function BlogPost({ metaData, slug, content}) {
 
       <Ratings />
 
-      <hr />
+      {/* <hr /> */}
 
     </Layout>
   );
