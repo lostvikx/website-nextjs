@@ -25,8 +25,6 @@ export default function Layout({ children, title, blog }) {
           : <main>{children}</main>
       }
 
-      {/* <main>{children}</main> */}
-
       <Footer blog={blog} />
 
     </div>
