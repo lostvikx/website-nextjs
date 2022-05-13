@@ -13,7 +13,7 @@ export default function Blog({ posts }) {
     <Layout title="Blog | Vikram Negi" blog={true}>
 
       <h1>Explore the Uncharted 🔭</h1>
-      <p>
+      <p className="article-p">
         I got into programming because I wanted to create my own little website, later I fell in love with the fascinating world of computers!
       </p>
 
@@ -38,10 +38,10 @@ export default function Blog({ posts }) {
                       <h3 className="post-title">
                         {post.metaData.title.slice(0, 50)}
                       </h3>
-                      <p className="post-excerpt">
+                      <p className="post-excerpt article-p">
                         {post.metaData.excerpt}
                       </p>
-                      <p className="time-created">
+                      <p className="time-created article-p">
                         Posted on {post.metaData.date}
                       </p>
                     </div>

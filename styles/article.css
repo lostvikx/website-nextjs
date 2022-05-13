@@ -35,8 +35,8 @@
   color: var(--purple);
 }
 
-h1, h2, h3, h4, h5 {
-  font-weight: 600;
+.article-p {
+  font-family: 'Roboto Slab', serif, Georgia, 'Times New Roman', Times;
 }
 
 /* article */
@@ -76,6 +76,8 @@ article ul {
 
 article ul li {
   padding: 0.25em;
+  font-size: 1rem;
+  font-family: 'Roboto Slab', serif, Georgia, 'Times New Roman', Times;
 }
 
 .cover-img {
@@ -107,7 +109,7 @@ code {
 }
 
 article p {
-  font-size: 1rem;
+  /* font-size: 1rem; */
   padding: 0.4em 0;
   /* text-align: justify; */
 }
@@ -151,4 +153,32 @@ blockquote {
 .quote {
   font-style: italic;
   /* text-align: left !important; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  font-family: "Roboto", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 150%;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .article-p, h5, h6, li, a, article ul li {
+    font-size: 90%;
+  }
+
+  .post-meta, .breadcrums span, footer>div:nth-child(1) {
+    font-size: 0.85rem !important;
+  }
+
+  article h1 {
+    font-size: 1.75rem;
+    padding: 0.15em 0;
+  }
+
+  article h2 {
+    font-size: 1.25rem;
+    padding: 0.5em 0 0.1em;
+  }
+
 }

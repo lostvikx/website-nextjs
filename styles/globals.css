@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto+Slab:wght@400;600&family=Roboto:wght@300;400;500&display=swap');
+
 :root {
   --text: #e8eaed;
   --blue: #93c5fd;
@@ -22,7 +24,7 @@ html {
 }
 
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Roboto", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   max-width: 1000px;
   margin: 0 auto;
   background-color: var(--bg-color);
@@ -77,15 +79,12 @@ footer div {
 }
 
 .contact-links {
-  /* display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center; */
   gap: 1rem;
 }
 
 .contact-links a {
-  color: var(--pink);
+  font-weight: 400;
+  color: var(--yellow);
 }
 
 .contact-links a:hover {

@@ -97,8 +97,7 @@ export default function BlogPost({ metaData, slug, content}) {
       </div>
 
       <h1>{metaData.title}</h1>
-
-
+      
       <div 
         id="article" 
         dangerouslySetInnerHTML={{ __html: createMarked(content) }}
@@ -106,7 +105,9 @@ export default function BlogPost({ metaData, slug, content}) {
       </div>
 
       <hr />
+
       <Ratings />
+
     </Layout>
   );
 }

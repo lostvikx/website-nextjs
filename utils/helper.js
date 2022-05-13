@@ -13,8 +13,19 @@ function createMarked(content) {
 
   const renderer = {
     link(href, title, text) {
-      return `<a target="_blank" href=${href} title=${title}>${text}</a>`;
+      return `
+        <a target="_blank" href=${href} title=${title}>
+          ${text}
+        </a>
+      `;
     },
+    paragraph(text) {
+      return `
+        <p class="article-p">
+          ${text}
+        </p>
+      `;
+    }
     // image(href, title, text) {
     //   return `<img src=${href} alt=${text} width="1000px" height="600px"/>`
     // }
