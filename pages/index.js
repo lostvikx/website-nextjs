@@ -7,12 +7,13 @@ export default function Home() {
       
       <section className="showcase">
         <div className="show-img">
-          <Image
+          <img
           src={"/images/showcase.jpg" || "/images/default-fallback-image.png"}
           alt="Me chilling near a delta"
-          width="300px"
-          height="600px"
+          width={300}
+          height={600}
           layout="fixed" 
+          // loader
         />
         </div>
         <div className="show-text flex-col">
