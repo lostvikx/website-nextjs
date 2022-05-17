@@ -31,7 +31,6 @@ export default function Home() {
               <a 
                 className="btn" 
                 target="_blank"
-                // download="Resume: Vikram Singh Negi"
               >
                 Download Resume
               </a>

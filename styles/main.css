@@ -83,10 +83,10 @@ blockquote {
 }
 
 .fn-btns .btn:first-child:hover {
-  background-color: var(--blue);
-  color: var(--text);
+  background-color: var(--pink);
+  /* color: var(--text); */
   border: var(--bg-color) 2px solid;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .fn-btns .btn:last-child {
@@ -99,7 +99,7 @@ blockquote {
   background-color: var(--green);
   border: var(--bg-color) 2px solid;
   color: var(--bg-color);
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .show-text > h1 {
