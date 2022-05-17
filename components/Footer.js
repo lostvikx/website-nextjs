@@ -6,7 +6,7 @@ export default function Footer({blog}) {
       {/* <hr className="footer-line" /> */}
       <footer>
         <div>
-          Copyright &copy; 2022 Vikram Negi. All Rights Reserved.
+          &copy; 2022 Vikram Negi. All Rights Reserved.
         </div>
         <div className="contact-links flex-row">
           <div>
