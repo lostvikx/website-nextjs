@@ -11,13 +11,15 @@ export default function Home() {
       
       <section className="showcase">
         <div className="show-img">
-          <img
+          <Image
           src={"/images/showcase.jpg" || "/images/default-fallback-image.png"}
           alt="Me chilling near a delta"
           width={300}
           height={600}
           layout="fixed" 
           // loader
+          priority={true}
+          rel="preload"
         />
         </div>
         <div className="show-text flex-col">
