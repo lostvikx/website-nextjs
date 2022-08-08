@@ -26,7 +26,7 @@ export default function Home() {
           <h1>Hello, World 👋</h1>
           <p>I&apos;m a self-taught developer who enjoys using his computer to do productive things in life.</p>
           <div className="fn-btns flex-row">
-            <Link href="mailto:viknegi0@gmail.com">
+            <Link href="mailto:vikram.s.negi@proton.me">
               <a className="btn">Contact</a>
             </Link>
             <Link href={resumePath}>
